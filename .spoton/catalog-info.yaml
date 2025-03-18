@@ -1,0 +1,23 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: codefresh-runner-config-and-helmchart
+  description: |
+    A fork of official Codefresh helm chart to set up codefresh runners on our Kubernetes. Runners are executing Codefresh pipelines jobs
+  annotations:
+    spoton.com/domain: domain:default/infrastructure
+    spoton.com/subdomain: domain:default/delivery-platform
+    github.com/project-slug: spotoninc/codefresh-runner-config-and-helmchart
+  links:
+    
+    - title: Slack (#your-channel-here)
+      type: contact
+      url: https://spoton.slack.com/archives/CFBPX8NMQ
+      icon: chat
+      
+
+spec:
+  type: library
+  owner: group:default/infrastructure-delivery
+  lifecycle: production
